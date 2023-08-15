@@ -7,7 +7,6 @@ import { Container, Button, Dropdown } from "react-bootstrap";
 import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
 
 function BasicExample() {
-
   const isLoggedIn = JSON.parse(localStorage.getItem("idUser")); // // true or false
 
   const navigate = useNavigate();
@@ -30,7 +29,7 @@ function BasicExample() {
                 <img
                   height={50}
                   className="text-center justify-center"
-                  src={isLoggedIn.img} 
+                  src={isLoggedIn.img}
                 />
 
                 <h5 className="ms-auto text-center">{isLoggedIn.name}</h5>
@@ -47,26 +46,26 @@ function BasicExample() {
           </Dropdown>
         </div>
       </>
-    )
+    );
   } else {
-      component = (
-        <>
-          <div className="text-center ">
-            <NavLink
-              to={"/login"}
-              className="logindong btn text-carevul border-carevul m-1"
-            >
-              Login
-            </NavLink>
-            <NavLink
-              to={"/regis"}
-              className="btn color-carevul-gradient text-white m-1"
-            >
-              Register
-            </NavLink>
-          </div>
-        </>
-      );
+    component = (
+      <>
+        <div className="text-center ">
+          <NavLink
+            to={"/login"}
+            className="logindong btn text-carevul border-carevul m-1"
+          >
+            Login
+          </NavLink>
+          <NavLink
+            to={"/regis"}
+            className="btn color-carevul-gradient text-white m-1"
+          >
+            Register
+          </NavLink>
+        </div>
+      </>
+    );
   }
 
   return (
@@ -75,7 +74,7 @@ function BasicExample() {
         <Navbar.Brand href="#">
           {" "}
           <div className="logoApp" onClick={() => navigate("/")}>
-            <img src={CarevulLogo} alt="Carevul Logo" />{" "}
+            <img width={50} src={CarevulLogo} alt="Carevul Logo" />{" "}
           </div>{" "}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -97,9 +96,7 @@ function BasicExample() {
               Kalkulator BMI
             </NavLink>
           </Nav>
-          <Nav className="ms-auto gap-1">
-           {component}
-          </Nav>
+          <Nav className="ms-auto gap-1">{component}</Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
