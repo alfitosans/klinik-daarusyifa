@@ -1,0 +1,20 @@
+.card-doctor {
+    background-color: #F9FBFD;
+}
+
+
+
+.doctor-name {
+    text-align: center;
+}
+
+.circle-radio-btn {
+    font-size: 25px; 
+    border: 2px solid #3655D5;
+}
+
+@media (min-width: 640px) { 
+    .doctor-name {
+        text-align: left;
+    }
+}

@@ -1,0 +1,25 @@
+#chatroom-box {
+  height: 80vh;
+  overflow: scroll;
+  border-left: 1px solid #e6e6e6;
+}
+
+#chatListRoom {
+  height: 100vh;
+  overflow: scroll;
+  overflow-y: scroll; /* Add the ability to scroll */
+}
+#chatListRoom::-webkit-scrollbar {
+  display: none;
+}
+#chatListRoom {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+#chatroom-box::-webkit-scrollbar {
+  display: none;
+}
+#chatroom-box {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
