@@ -63,7 +63,7 @@ body {
   color: #1e293b;
   width: auto;
   height: 400px;
-  background: linear-gradient(#21a3f8, #6700cc);
+  background: linear-gradient(rgba(0, 175, 81, 1));
 }
 
 .hero-text {
@@ -133,11 +133,11 @@ nav {
 
 .btn-primary {
   color: #fff;
-  background: linear-gradient(96.14deg, #3a8ef6 -10.84%, #7c1add 164.3%);
+  background: linear-gradient(96.14deg, rgba(0, 175, 81, 1));
 }
 
 .btn-primary:hover {
-  background: linear-gradient(96.14deg, #277ce3 -10.84%, #660bc0 164.3%);
+  background: linear-gradient(96.14deg, rgba(0, 175, 81, 1));
 }
 
 nav ul {

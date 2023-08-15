@@ -35,7 +35,7 @@ const Landing = () => {
               <br />
               di Daarusyifa !
             </h1>
-            <p className="text-white mt-3">
+            <p className="text-white my-4">
               Klinik Pratama dengan Pelayanan Paripurna di Kecamatan Cipayung,
               Jakarta Timur
             </p>

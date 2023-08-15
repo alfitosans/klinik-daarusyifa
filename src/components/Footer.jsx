@@ -14,7 +14,7 @@ const footer = () => {
         <div className="container ">
           <div className="row d-flex justify-content-between pt-4 pb-3">
             <div className="col-mb-5 col-md-4 mt">
-              <img src={carevulLogo} alt="" />
+              <img width={70} src={carevulLogo} alt="" />
               <div className="text-gray  mb-4">
                 <p>
                   Kamu lagi sakit?
