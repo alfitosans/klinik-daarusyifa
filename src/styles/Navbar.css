@@ -5,6 +5,15 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
+.article-lainya {
+  background-color: linear-gradient(
+    to right,
+    rgba(0, 174, 83, 1),
+    rgba(0, 122, 85, 1)
+  );
+}
+
 .logindong {
   border: rgba(0, 175, 81, 1) 1px solid !important;
 }
@@ -58,7 +67,12 @@ p {
 }
 
 .main-button {
-  background: linear-gradient(96.14deg, #3f95ff -10.84%, #7c1add 164.3%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 174, 83, 1),
+    rgba(0, 122, 85, 1)
+  );
+
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -87,7 +101,12 @@ p {
 }
 
 .main-button-register:hover {
-  background: linear-gradient(96.14deg, #3f95ff -10.84%, #7c1add 164.3%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 174, 83, 1),
+    rgba(0, 122, 85, 1)
+  );
+
   border: 1px solid rgba(0, 175, 81, 1);
   color: white;
 }
@@ -95,7 +114,11 @@ p {
 .scroll-on {
   background-color: white;
   padding: 14px;
-  box-shadow: linear-gradient(96.14deg, #3f95ff -10.84%, #7c1add 164.3%);
+  box-shadow: linear-gradient(
+    to right,
+    rgba(0, 174, 83, 1),
+    rgba(0, 122, 85, 1)
+  );
 }
 
 /* ===================== BANNER SECTION ====================== */

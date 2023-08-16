@@ -43,25 +43,25 @@ p {
     to right,
     rgba(0, 174, 83, 1),
     rgba(0, 122, 85, 1)
-  );
-
+  ) !important;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   text-transform: capitalize;
   font-weight: 600;
-  border: 1px solid rgba(0, 175, 81, 1);
+  border: 1px solid rgba(0, 175, 81, 1) !important;
   border-radius: 11.25px;
   transition: 0.5s ease-in-out;
 }
 
 .main-button:hover {
-  background: white;
-  color: #3655d5;
+  background: white !important;
+  color: rgba(0, 122, 85, 1) !important;
+  border: 1px solid rgba(0, 122, 85, 1) !important;
 }
 
 .main-button-register {
-  background-color: 0e90E4;
+  background-color: #0e90e4;
   color: #3655d5;
   padding: 10px 20px;
   text-decoration: none;
