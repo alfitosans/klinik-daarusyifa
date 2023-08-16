@@ -1,11 +1,11 @@
 import carevulLogo from "../assets/carevul-logo.svg";
 import "../styles/footer.css";
 import { Link } from "react-router-dom";
-import fb from "../assets/icon/Facebook.svg";
-import ins from "../assets/icon/instagram.svg";
-import lin from "../assets/icon/LinkedIn.svg";
-import twi from "../assets/icon/Twitter.svg";
-import yt from "../assets/icon/Youtube.svg";
+import fb from "../assets/icon/Facebook.png";
+import ins from "../assets/icon/instagram.png";
+import lin from "../assets/icon/LinkedIn.png";
+import twi from "../assets/icon/Twitter.png";
+import yt from "../assets/icon/Youtube.png";
 
 const footer = () => {
   return (
