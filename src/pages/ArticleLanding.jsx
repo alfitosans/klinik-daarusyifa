@@ -21,7 +21,7 @@ const ArticleLanding = () => {
         </Container>
       </section>
       <div className="text-center">
-        <Link to={"/articlehome"} className="logindong main-button">
+        <Link to={"/articlehome"} className="main-button">
           Artikel Lainnya
         </Link>
       </div>
