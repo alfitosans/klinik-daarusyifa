@@ -160,17 +160,7 @@ select option {
 }
 
 .bg-color {
-  /* background: linear-gradient(
-    180deg,
-    #6cc5fe 0%,
-    #5bbaff 6.71%,
-    #43acfc 15.06%,
-    #3081ef 32.56%,
-    #4a7bf0 47.46%,
-    #4e39db 77.4%,
-    #5d18d2 86.4%,
-    #6700cc 100%
-  ); */
+  background: linear-gradient(rgba(0, 175, 81, 0.02));
 }
 
 .login-right img {

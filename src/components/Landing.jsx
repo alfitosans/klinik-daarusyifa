@@ -154,16 +154,17 @@ const Landing = () => {
             <div className="card-introduction d-flex align-center justify-center">
               <img src={Pict2} className="Character2" alt="" />
               <div className="desc">
-                <h2>Kenalan sama kita yuk!</h2>
+                <h2>Visi Klinik Pratama Daarussyifa </h2>
+                <h5>
+                  Visi : “Menjadi Klinik Pratama dengan Pelayanan Paripurna di
+                  Kecamatan Cipayung Jakarta Timur 2023”
+                </h5>
                 <p>
-                  Dear Carefriends, terima kasih telah membersamai kami sejak
-                  tahun 2023. Kami berkomitmen untuk membantu masyarakat dalam
-                  layanan konsultasi secara online dengan tenaga kesehatan yang
-                  ahli dan profesional.
-                </p>
-                <p>
-                  Tetap berkembang bersama kami untuk mendukung fasilitas
-                  Telemedicine yang nyaman digunakan ya Carefriends!
+                  Untuk mencapai visi tersebut, Klinik Pratama Daarussyifa
+                  menjalankan beberapa MISI KESEHATAN berupa: Meningkatkan
+                  kompetensi pegawai di berbagai bidang Melakukan pelayanan
+                  dengan profesional Melengkapi Sarana dan Prasarana Klinik
+                  Pratama Daarussyifa
                 </p>
               </div>
             </div>

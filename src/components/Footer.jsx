@@ -73,9 +73,9 @@ const footer = () => {
                 <div className="fw-2 d-flex flex-column gap-2">
                   <h5 className="text-carevul ">Kontak Kami</h5>
 
-                  <span className="fw-normal">Carevul@help.com </span>
+                  <span className="fw-normal">pratamadsf@gmail.com</span>
 
-                  <span>Sumatra, Indonesia</span>
+                  <span>Jl. Monumen Pancasila Sakti No.45, Jaktim</span>
                   <span>0822-8903-9601</span>
                 </div>
               </div>

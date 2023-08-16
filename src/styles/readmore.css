@@ -105,7 +105,6 @@ p {
 
 .body-more:hover {
   transform: scale(1.05);
-
 }
 
 .card-title {
@@ -117,7 +116,7 @@ p {
 
 #card-goto-read {
   font-weight: 600;
-  color: #3655d5;
+  color: rgba(0, 175, 81, 1);
   font-size: 14px;
   text-decoration: none;
 }
