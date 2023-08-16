@@ -74,7 +74,7 @@ function BasicExample() {
         <Navbar.Brand href="#">
           {" "}
           <div className="logoApp" onClick={() => navigate("/")}>
-            <img width={50} src={CarevulLogo} alt="Carevul Logo" />{" "}
+            <img width={60} src={CarevulLogo} alt="Carevul Logo" />{" "}
           </div>{" "}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -83,9 +83,6 @@ function BasicExample() {
             <NavLink to={"/"} className="nav-link">
               Home
             </NavLink>
-            {/* <NavLink to={"/paymentdoctor"} className="nav-link ">
-              Payment Test
-            </NavLink> */}
             <NavLink to={"/consult/category"} className="nav-link ">
               Konsultasi
             </NavLink>

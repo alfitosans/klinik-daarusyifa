@@ -63,7 +63,7 @@ body {
   color: #1e293b;
   width: auto;
   height: 400px;
-  background: linear-gradient(#21a3f8, #6700cc);
+  background: linear-gradient(rgba(0, 175, 81, 1));
 }
 
 .hero-text {
@@ -110,6 +110,7 @@ nav {
 }
 
 .btn {
+  color: rgba(0, 175, 81, 1);
   min-width: 100px;
   text-align: center;
   text-decoration: none;
@@ -120,24 +121,33 @@ nav {
 }
 
 .btn-secondary {
-  border: 2px solid #296fde;
-  color: #296fde;
+  border: 2px solid rgba(0, 175, 81, 1);
+  color: rgba(0, 175, 81, 1);
   background: #ffffff;
 }
 
 .btn-secondary:hover {
-  border: 2px solid #7c1add;
-  color: #7c1add;
+  border: 2px solid
+    linear-gradient(to right, rgba(0, 174, 83, 1), rgba(0, 122, 85, 1));
+  color: linear-gradient(to right, rgba(0, 174, 83, 1), rgba(0, 122, 85, 1));
   box-sizing: border-box;
 }
 
 .btn-primary {
   color: #fff;
-  background: linear-gradient(96.14deg, #3a8ef6 -10.84%, #7c1add 164.3%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 174, 83, 1),
+    rgba(0, 122, 85, 1)
+  );
 }
 
 .btn-primary:hover {
-  background: linear-gradient(96.14deg, #277ce3 -10.84%, #660bc0 164.3%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 174, 83, 1),
+    rgba(0, 122, 85, 1)
+  );
 }
 
 nav ul {
@@ -159,7 +169,7 @@ nav ul li a {
 
 nav ul li a:hover {
   /* font-weight: bold; */
-  color: #296fde;
+  color: rgba(0, 175, 81, 1);
 }
 
 footer li {
@@ -174,7 +184,11 @@ footer li {
   color: #1e293b;
   width: auto;
   height: 400px;
-  background: linear-gradient(#21a3f8, #6700cc);
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 174, 83, 1),
+    rgba(0, 122, 85, 1)
+  );
 }
 
 .hero-container div {
@@ -217,7 +231,7 @@ footer li {
 }
 
 .a-text {
-  color: #296fde;
+  color: rgba(0, 175, 81, 1);
   font-size: 30px;
   justify-content: center;
   padding: 10px 0 30px 0;
@@ -240,7 +254,7 @@ footer li {
 
 .card {
   overflow: hidden;
-  background-color: #f9fbfd;
+  background-color: rgba(0, 175, 81, 0.02);
   display: flex;
   flex-direction: column;
   border: 0.5px solid #e6e9ec;
@@ -276,8 +290,8 @@ footer li {
 }
 
 .card-service {
-  border: #1678f2 solid 1px;
-  background-color: #f6f9ff;
+  border: rgba(0, 175, 81, 1) solid 1px;
+  background-color: rgba(0, 175, 81, 0.02);
   min-height: 240px;
   border-radius: 5px;
 }
@@ -297,13 +311,13 @@ footer li {
 }
 .card-introduction h2 {
   font-size: 30px;
-  color: #3678e0;
+  color: rgba(0, 175, 81, 1);
   margin-bottom: 15px;
 }
 
 .card-introduction {
   width: 100%;
-  background-color: #eef4ff;
+  background-color: rgba(0, 175, 81, 0.02);
   min-height: 300px;
   padding: 20px 70px;
   border-radius: 5px;
@@ -325,7 +339,7 @@ footer li {
 }
 
 .btn-art {
-  color: #296fde;
+  color: rgba(0, 175, 81, 1);
   font-weight: 600;
   min-width: 100px;
   text-decoration: none;
@@ -378,7 +392,7 @@ footer {
 }
 
 .footer-content h4 {
-  color: #1678f2;
+  color: rgba(0, 175, 81, 1);
 }
 
 .footer-content ul {

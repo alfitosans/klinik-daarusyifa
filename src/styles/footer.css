@@ -40,11 +40,11 @@ p {
 
 /* For Footer */
 .text-carevul {
-  color: #296fde;
+  color: rgba(0, 175, 81, 1);
 }
 
 .bg-color-footer {
-  background-color: #f9fbfd;
+  background-color: rgba(0, 175, 81, 0.02);
 }
 
 .text-gray {
@@ -59,7 +59,7 @@ p {
 
 .social-media {
   font-size: 30px;
-  color: #296fde;
+  color: rgba(0, 175, 81, 1);
   width: 60%;
 }
 
@@ -82,7 +82,7 @@ p {
 @media (max-width: 991px) {
   .social-media {
     font-size: 20px;
-    color: #296fde;
+    color: rgba(0, 175, 81, 1);
     width: 60%;
   }
 }
@@ -98,6 +98,6 @@ p {
 }
 .social-media {
   font-size: 20px;
-  color: #296fde;
+  color: rgba(0, 175, 81, 1);
   width: 60%;
 }

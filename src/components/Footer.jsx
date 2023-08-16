@@ -14,7 +14,7 @@ const footer = () => {
         <div className="container ">
           <div className="row d-flex justify-content-between pt-4 pb-3">
             <div className="col-mb-5 col-md-4 mt">
-              <img src={carevulLogo} alt="" />
+              <img width={70} src={carevulLogo} alt="" />
               <div className="text-gray  mb-4">
                 <p>
                   Kamu lagi sakit?
@@ -73,9 +73,9 @@ const footer = () => {
                 <div className="fw-2 d-flex flex-column gap-2">
                   <h5 className="text-carevul ">Kontak Kami</h5>
 
-                  <span className="fw-normal">Carevul@help.com </span>
+                  <span className="fw-normal">pratamadsf@gmail.com</span>
 
-                  <span>Sumatra, Indonesia</span>
+                  <span>Jl. Monumen Pancasila Sakti No.45, Jaktim</span>
                   <span>0822-8903-9601</span>
                 </div>
               </div>
