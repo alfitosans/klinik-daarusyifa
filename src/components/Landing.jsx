@@ -57,7 +57,7 @@ const Landing = () => {
       <section className="service">
         <div className="">
           <h1 className="a-text d-flex mt-5">Tata Nilai AHWAN</h1>
-          <h5 className="text-center mb-5">
+          <h5 className="text-center mb-5 mx-3">
             Semua Staff klinik pratama Daarusyifa telah berikrar untuk
             memberikan pelayanan <br></br>kesehatan masyarakat dengan tata Nilai
             yaitu AHWAN :
@@ -72,9 +72,9 @@ const Landing = () => {
                 <div className="item-service">
                   <div className="card-service d-flex flex-column align-items-center justify-content-center">
                     <img src={Online} alt="" />
-                    <h3 className="text-center mx-2">Konsultasi Online</h3>
+                    <h3 className="text-center mx-2">Akuntabel</h3>
                     <h6 className="text-center2 mx-3">
-                      Menyediakan layanan konsultasi online selama 24 jam
+                      Informasi yang diberikan valid dan dapat dipercaya
                     </h6>
                   </div>
                 </div>
@@ -87,9 +87,10 @@ const Landing = () => {
                 <div className="item-service">
                   <div className="card-service d-flex flex-column align-items-center justify-content-center">
                     <img src={History} alt="" />
-                    <h3 className="text-center mx-2">Medis Profesional</h3>
+                    <h3 className="text-center mx-2">Harmonis</h3>
                     <h6 className="text-center2 mx-3">
-                      Tenaga medis yang sudah berpengalaman di bidangnya
+                      Kolaborasi yang baik untuk mendukung visi dan tujuan
+                      klinik
                     </h6>
                   </div>
                 </div>
@@ -102,9 +103,9 @@ const Landing = () => {
                 <div className="item-service">
                   <div className="card-service d-flex flex-column align-items-center justify-content-center">
                     <img src={Users} alt="" />
-                    <h3 className="text-center mx-2">Dokter Berkualitas</h3>
+                    <h3 className="text-center mx-2">Wibawa</h3>
                     <h6 className="text-center2 mx-3">
-                      Lulusan dokter dari banyak negara maju yang berkualitas
+                      Pelayanan yang otoritas dan kepercayaan pada pasien
                     </h6>
                   </div>
                 </div>
@@ -118,9 +119,9 @@ const Landing = () => {
                 <div className="item-service">
                   <div className="card-service d-flex flex-column align-items-center justify-content-center">
                     <img src={Amanah} alt="" />
-                    <h3 className="text-center mx-2">Dokter Berkualitas</h3>
+                    <h3 className="text-center mx-2">Amanah</h3>
                     <h6 className="text-center2 mx-3">
-                      Lulusan dokter dari banyak negara maju yang berkualitas
+                      Menjaga informasi dan beretika dalam menangani pasien
                     </h6>
                   </div>
                 </div>
@@ -134,9 +135,10 @@ const Landing = () => {
                 <div className="item-service">
                   <div className="card-service d-flex flex-column align-items-center justify-content-center">
                     <img src={Doctor} alt="" />
-                    <h3 className="text-center mx-2">Dokter Berkualitas</h3>
+                    <h3 className="text-center mx-2">Nyaman</h3>
                     <h6 className="text-center2 mx-3">
-                      Lulusan dokter dari banyak negara maju yang berkualitas
+                      Memberikan kenyamanan dan keamanan bagi pasien dalam
+                      pengobatan
                     </h6>
                   </div>
                 </div>
