@@ -5,7 +5,7 @@ import fb from "../assets/icon/Facebook.svg";
 import ins from "../assets/icon/Instagram.svg";
 import lin from "../assets/icon/LinkedIn.svg";
 import twi from "../assets/icon/Twitter.svg";
-import yt from "../assets/icon/Youtube.svg";
+import yt from "../assets/icon/YouTube.svg";
 
 const footer = () => {
   return (
