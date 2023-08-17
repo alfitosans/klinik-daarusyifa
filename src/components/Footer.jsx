@@ -2,7 +2,7 @@ import carevulLogo from "../assets/carevul-logo.svg";
 import "../styles/footer.css";
 import { Link } from "react-router-dom";
 import fb from "../assets/icon/Facebook.svg";
-import ins from "../assets/icon/instagram.svg";
+import ins from "../assets/icon/Instagram.svg";
 import lin from "../assets/icon/LinkedIn.svg";
 import twi from "../assets/icon/Twitter.svg";
 import yt from "../assets/icon/Youtube.svg";
