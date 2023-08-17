@@ -76,7 +76,7 @@ const footer = () => {
                   <span className="fw-normal">pratamadsf@gmail.com</span>
 
                   <span>Jl. Monumen Pancasila Sakti No.45, Jaktim</span>
-                  <span>0822-8903-9601</span>
+                  <span>0818-0483-1774</span>
                 </div>
               </div>
             </div>
