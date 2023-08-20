@@ -16,7 +16,7 @@ function Register() {
     e.preventDefault();
 
     let res = await axios.get(
-      "https://6454b891f803f345762f6469.mockapi.io/users"
+      "https://64e224b4ab0037358818bf67.mockapi.io/users"
     );
     let data = await res.data;
 
