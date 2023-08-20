@@ -47,6 +47,7 @@ p {
 #card-category-image {
   background-position: left;
   width: 100%;
+  transition: transform 0.2s;
   height: auto;
 }
 
