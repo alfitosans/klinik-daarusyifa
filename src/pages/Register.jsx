@@ -15,10 +15,12 @@ function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    let res = await axios.get("https://6454b891f803f345762f6469.mockapi.io/users");
+    let res = await axios.get(
+      "https://64e224b4ab0037358818bf67.mockapi.io/users"
+    );
     let data = await res.data;
 
-    const ambilData = async() => {
+    const ambilData = async () => {
       const result = [];
       for (let i = 0; i < data.length; i++) {
         if (data[i].email == email) {
@@ -30,11 +32,12 @@ function Register() {
 
       if (result == 0) {
         await axios
-          .post("https://6454b891f803f345762f6469.mockapi.io/users", {
+          .post("https://64e224b4ab0037358818bf67.mockapi.io/users", {
             name: name,
             email: email,
             password: password,
-            image: "https://img.icons8.com/?size=512&id=tZuAOUGm9AuS&format=png",
+            image:
+              "https://img.icons8.com/?size=512&id=tZuAOUGm9AuS&format=png",
           })
           .then((result) => {
             new Swal(
@@ -62,7 +65,11 @@ function Register() {
   return (
     <div>
       <section className="login d-flex">
-        <div className="login-left h-100"  data-aos="fade-right" data-aos-duration="1000">
+        <div
+          className="login-left h-100"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <div className="row justify-content-center align-items-center h-100">
             <div className="col-7">
               <div className="header">

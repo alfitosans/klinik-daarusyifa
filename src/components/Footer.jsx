@@ -2,10 +2,10 @@ import carevulLogo from "../assets/carevul-logo.svg";
 import "../styles/footer.css";
 import { Link } from "react-router-dom";
 import fb from "../assets/icon/Facebook.svg";
-import ins from "../assets/icon/instagram.svg";
+import ins from "../assets/icon/Instagram.svg";
 import lin from "../assets/icon/LinkedIn.svg";
 import twi from "../assets/icon/Twitter.svg";
-import yt from "../assets/icon/Youtube.svg";
+import yt from "../assets/icon/YouTube.svg";
 
 const footer = () => {
   return (
@@ -76,7 +76,7 @@ const footer = () => {
                   <span className="fw-normal">pratamadsf@gmail.com</span>
 
                   <span>Jl. Monumen Pancasila Sakti No.45, Jaktim</span>
-                  <span>0822-8903-9601</span>
+                  <span>0818-0483-1774</span>
                 </div>
               </div>
             </div>
