@@ -32,11 +32,11 @@ const RoomChat = () => {
   // get data login from localstorage
   const loggedUser = JSON.parse(localStorage.getItem("idUser"));
 
-
   const handleSubmitForm = async (e) => {
     e.preventDefault();
 
-    await fetch(`https://sk-chat-api.vercel.app/api/chat?roomId=${roomChat?.id}`,
+    await fetch(
+      `https://sk-chat-api.vercel.app/api/chat?roomId=${roomChat?.id}`,
       {
         method: "POST",
         headers: {
@@ -49,7 +49,6 @@ const RoomChat = () => {
         }),
       }
     );
-
 
     setInputChat("");
 
