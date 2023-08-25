@@ -13,7 +13,7 @@ function LoginDoctor() {
     e.preventDefault();
 
     let res = await axios.get(
-      "https://6487fbcf0e2469c038fcbc44.mockapi.io/doctor"
+      "https://64de412c825d19d9bfb25d14.mockapi.io/doctor"
     );
     let data = await res.data;
 
@@ -58,7 +58,7 @@ function LoginDoctor() {
                 data-aos-duration="1000"
               >
                 <h1>Hallo, Dokter</h1>
-                <p>Login dulu yuk sebelum kamu mengakses Carevul</p>
+                <p>Login dulu yuk sebelum kamu mengakses Klinik Daarusyifa</p>
               </div>
               <div className="login-form">
                 <form
