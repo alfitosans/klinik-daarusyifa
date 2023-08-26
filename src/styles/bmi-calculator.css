@@ -22,7 +22,7 @@ input[type="{height}"]::placeholder {
   box-shadow: 0px 0px 12px #ccc;
   border-radius: 8px;
   padding: 1rem;
-  background-color: #eef4ff;
+  background-color: rgba(0, 175, 81, 0.02);
   padding: 30px;
 }
 
@@ -57,7 +57,7 @@ label {
   padding: 10px 0;
   color: #fff;
   cursor: pointer;
-  background: linear-gradient(96.14deg, #3f95ff -10.84%, #7c1add 164.3%);
+  background: #00af51;
   border-radius: 11.25px;
   border: none;
   font-style: normal;
@@ -75,11 +75,11 @@ label {
   margin: 8px 0;
   margin-top: 10px;
   padding: 10px 0;
-  color: #3f95ff;
+  color: #00af51;
   cursor: pointer;
   background: #fff;
   border-radius: 11.25px;
-  border: solid 3px #3f95ff;
+  border: solid 3px #00af51;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -109,7 +109,7 @@ p {
 }
 
 #title-bmi {
-  color: #3655d5;
+  color: #00af51;
   text-align: center;
   font-size: 35px;
   margin-top: 10px;
@@ -125,7 +125,7 @@ p {
 
 #result {
   font-size: 25px;
-  color: #3655d5;
+  color: #00af51;
 }
 
 #message {

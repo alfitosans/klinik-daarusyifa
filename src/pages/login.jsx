@@ -70,10 +70,11 @@ function Login() {
             <div className="col-7">
               <div className="header">
                 <h1 data-aos="fade-right" data-aos-duration="1000">
-                  Hallo, Carefriends
+                  Hallo, Syifa's Friends
                 </h1>
                 <p data-aos="fade-right" data-aos-duration="1000">
-                  Login dulu yuk sebelum kamu mengakses Carevul
+                  Login dulu yuk sebelum kamu mengakses platform klinik
+                  Daarusyifa
                 </p>
               </div>
               <div className="login-form">

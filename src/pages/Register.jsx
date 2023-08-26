@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./../styles/loginregis.css";
-import regisLogo from "./../assets/register.svg";
+import regisLogo from "./../assets/login.svg";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
@@ -74,7 +74,9 @@ function Register() {
             <div className="col-7">
               <div className="header">
                 <h1>Daftar dulu yuk</h1>
-                <p>Gratis konsultasi di Carevul dimanapun dan kapanpun</p>
+                <p>
+                  Gratis konsultasi di Klinik Daarusyifa dimanapun dan kapanpun
+                </p>
               </div>
               <div className="login-form">
                 <form id="form-register" onSubmit={handleRegister}>

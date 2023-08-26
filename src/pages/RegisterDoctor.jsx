@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./../styles/loginregis.css";
-import regisLogo from "./../assets/register.svg";
+import regisLogo from "./../assets/login.svg";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
@@ -15,7 +15,9 @@ function RegisterDoctor() {
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    let res = await axios.get("https://6487fbcf0e2469c038fcbc44.mockapi.io/doctor");
+    let res = await axios.get(
+      "https://6487fbcf0e2469c038fcbc44.mockapi.io/doctor"
+    );
     let data = await res.data;
 
     const ambilData = () => {
@@ -61,7 +63,11 @@ function RegisterDoctor() {
   return (
     <div>
       <section className="login d-flex">
-        <div className="login-left h-100"  data-aos="fade-right" data-aos-duration="1000">
+        <div
+          className="login-left h-100"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <div className="row justify-content-center align-items-center h-100">
             <div className="col-7">
               <div className="header">
@@ -119,16 +125,8 @@ function RegisterDoctor() {
                   >
                     <option defaultValue={""}>Pilih Kategori</option>
                     <option value="umum">Dokter Umum</option>
-                    <option value="anak">Dokter Anak</option>
-                    <option value="kulit_kelamin">Dokter Kulit & Kelamin</option>
                     <option value="gigi">Dokter Gigi</option>
                     <option value="kandungan">Dokter Kandungan</option>
-                    <option value="tht">Dokter THT</option>
-                    <option value="psikiater">Dokter Psikiater</option>
-                    <option value="saraf">Dokter Saraf</option>
-                    <option value="penyakit_dalam">Dokter Penyakit Dalam</option>
-                    <option value="mata">Dokter Mata</option>
-                    <option value="tulang">Dokter Tulang</option>
                   </select>
 
                   <label htmlFor="instansi" className="form-label mrgn-1">

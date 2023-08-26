@@ -18,11 +18,12 @@ const footer = () => {
               <div className="text-gray  mb-4">
                 <p>
                   Kamu lagi sakit?
-                  <span className="text-carevul fw-bolder"> Carevul</span>{" "}
+                  <span className="text-carevul fw-bolder">
+                    {" "}
+                    Klinik Daarusyifa
+                  </span>{" "}
                   {/* <span className="text-carevul fw-bolder"> Carevul </span> */}
-                  solusinya,
-                  <br />
-                  tanpa antri, tanpa ribet, konsulin aja!
+                  solusinya, tanpa antri, tanpa ribet, konsulin aja!
                 </p>
               </div>
 
@@ -84,7 +85,7 @@ const footer = () => {
           <hr />
           <div className="d-flex justify-content-center align-items-center ">
             <div className="d-flex justify-content-center align-items-center ">
-              Copyright © 2023 Carevul
+              Copyright © 2023 Klinik Daarusyifa
             </div>
           </div>
         </div>

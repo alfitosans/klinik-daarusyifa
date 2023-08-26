@@ -2,16 +2,16 @@
   font-family: "Poppins", sans-serif;
 }
 input[type="text"]::placeholder {
-  color: #bcbcbc;
+  color: rgba(0, 175, 81, 0.02);
 }
 input[type="email"]::placeholder {
-  color: #bcbcbc;
+  color: rgba(0, 175, 81, 0.02);
 }
 input[type="password"]::placeholder {
-  color: #bcbcbc;
+  color: rgba(0, 175, 81, 0.02);
 }
 select {
-  color: #bcbcbc;
+  color: rgba(0, 175, 81, 0.02);
 }
 
 .login {
@@ -26,7 +26,7 @@ select {
   line-height: 54px;
   display: flex;
   align-items: center;
-  color: #3655d5;
+  color: rgba(0, 175, 81, 1);
 }
 
 .header p {
@@ -43,7 +43,7 @@ select {
   margin-top: 80px;
   width: 100%;
   height: 45px;
-  background: linear-gradient(96.14deg, #3f95ff -10.84%, #7c1add 164.3%);
+  background: rgba(0, 175, 81, 1);
   border-radius: 11.25px;
   border: none;
   font-style: normal;
@@ -60,7 +60,7 @@ select {
   margin-top: 40px;
   width: 100%;
   height: 45px;
-  background: linear-gradient(96.14deg, #3f95ff -10.84%, #7c1add 164.3%);
+  background: rgba(0, 175, 81, 1);
   border-radius: 11.25px;
   border: none;
   font-style: normal;
@@ -95,7 +95,7 @@ select {
   line-height: 24px;
   color: #5f6d7e;
   background: #ffffff;
-  border: 2px solid #296fde;
+  border: 2px solid rgba(0, 175, 81, 1);
   border-radius: 8.91238px;
 }
 
@@ -103,7 +103,7 @@ select {
   height: 45px;
   font-size: 15px;
   color: #5f6d7e;
-  border: 2.5px solid #2464cb;
+  border: 2.5px solid rgba(0, 175, 81, 1);
   border-radius: 8.91238px;
 }
 
@@ -136,7 +136,7 @@ select option {
 .login-form .regis {
   font-weight: 500;
   font-size: 15px;
-  color: #296fde;
+  color: rgba(0, 175, 81, 1);
   margin-left: 5px;
 }
 

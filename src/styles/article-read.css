@@ -8,35 +8,35 @@
 
 /* ========= Initial CSS  ============ */
 h2 {
-    font-size: 45px;
-    font-weight: bold;
-    color: #1e154f;
+  font-size: 45px;
+  font-weight: bold;
+  color: #1e154f;
 }
-  
+
 h3 {
-    font-size: 30px;
-    font-weight: 700;
-    color: #1e154f;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1e154f;
 }
-  
+
 h4 {
-    font-weight: 600;
-    font-size: 22px;
-    color: #1e154f;
+  font-weight: 600;
+  font-size: 22px;
+  color: #1e154f;
 }
-  
+
 h5 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1e154f;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e154f;
 }
-  
+
 p {
-    font-weight: 400;
-    font-size: 15px;
-    color: #3f4344;
-    line-height: 170%;
-    text-align: justify;
+  font-weight: 400;
+  font-size: 15px;
+  color: #3f4344;
+  line-height: 170%;
+  text-align: justify;
 }
 
 /* ============ Article Read ==========*/
@@ -46,41 +46,41 @@ p {
 } */
 
 #fulltext {
-    white-space: pre-line;
-    line-height: 170%;
+  white-space: pre-line;
+  line-height: 170%;
 }
 
 #main-title {
-    color: #1678f2;
-    white-space: pre-line;
+  color: #00af51;
+  white-space: pre-line;
 }
 
 #breadcrumbs {
-    color: #787878;
-    margin-bottom: 25px;
+  color: #787878;
+  margin-bottom: 25px;
 }
 
 #date {
-    color: #a6a6a6;
-    line-height: 170%;
-    font-weight: 500;
-    font-size: 17px;
+  color: #a6a6a6;
+  line-height: 170%;
+  font-weight: 500;
+  font-size: 17px;
 }
 
 #img-thumbnail {
-    max-width: 600px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 #read-more-title {
-    margin-left: 10px;
-    font-size: 20px;
-    line-height: 100%;
-    font-weight: 600;
-    color: #303030;
+  margin-left: 10px;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 600;
+  color: #303030;
 }
 
 .article-more {
-    margin-top: 60px;
+  margin-top: 60px;
 }
