@@ -11,10 +11,12 @@ import { useContext, useEffect, useState } from "react";
 import { PaymentContext } from "../context/paymentContext";
 import { Outlet, useNavigate, useParams } from "react-router";
 import { Input } from "@mui/material";
+import Swal from "sweetalert2";
 
 const PaymentPage = () => {
   const [radioVal, setRadioVal] = useState(false);
   const [doctor, setDoctor] = useState({});
+  const [Token, setToken] = useState("");
 
   const navigate = useNavigate();
   const param = useParams();
@@ -37,14 +39,33 @@ const PaymentPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (Token === "123456") {
+      setPayment({
+        idDoctor: param.id,
+        // bookingId: idBooking,
+        price: 20000,
+        paymentMethod: radioVal,
+      });
 
-    setPayment({
-      idDoctor: param.id,
-      // bookingId: idBooking,
-      price: 20000,
-      paymentMethod: radioVal,
-    });
-    navigate("/bookingpage");
+      navigate("/bookingpage");
+      new Swal({
+        icon: "success",
+        title: "Berhasil!",
+        text: "Token berhasil di validasi!, pembayaran berhasil dilakukan!",
+      });
+    } else if (Token === "") {
+      new Swal({
+        icon: "error",
+        title: "Oops...",
+        text: "Token tidak boleh kosong!",
+      });
+    } else if (Token !== "123456") {
+      new Swal({
+        icon: "error",
+        title: "Oops...",
+        text: "Token tidak boleh kurang dari 6 digit!",
+      });
+    }
   };
 
   useEffect(() => {}, [payment]);
@@ -102,6 +123,7 @@ const PaymentPage = () => {
                       type="text"
                       placeholder="Masukan Token"
                       className="mb-3 border-carevul rounded-3 px-3 py-2 w-100"
+                      onChange={(e) => setToken(e.target.value)}
                     ></input>
                     <div className="col-md-12 d-flex">
                       <button
