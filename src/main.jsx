@@ -2,7 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -46,6 +51,7 @@ import DetailDoctor from "./pages/DetailDoctor";
 import RoomChatForDoctorProvider from "./context/roomChatForDoctor";
 import RoomChatDoctor from "./components/RoomChatDoctor";
 import BookingProvider from "./context/bookingContext";
+import BookingStatus from "./components/BookingStatus.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -83,6 +89,10 @@ const router = createBrowserRouter(
           </Route>
           <Route path="/consult/category" element={<CategoryDoctor />} />
           <Route path="/consult/category/:id" element={<ListDoctor />} />
+          <Route
+            path="/consult/category/bookingstatus"
+            element={<BookingStatus />}
+          />
         </Route>
       </Route>
 
