@@ -12,7 +12,7 @@ function BookingStatus() {
             Silahkan tunggu, anda akan dipanggil oleh admin kami.
           </p>
           <h4 className="mb-3">Nama anda :</h4>
-          <h4 className="mb-3">Nama Dokter :</h4>
+          <h4 className="mb-3">Kategori Poli :</h4>
           <h4 className="mb-3">No Antrian :</h4>
           <h4 className="mb-3">Waktu :</h4>
           <Link to="/consult/category">

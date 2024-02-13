@@ -86,12 +86,6 @@ function BasicExample() {
             <NavLink to={"/consult/category"} className="nav-link ">
               Konsultasi
             </NavLink>
-            <NavLink to={"/articlehome"} className="nav-link ">
-              Artikel
-            </NavLink>
-            <NavLink to={"/bmicalculator"} className="nav-link ">
-              Kalkulator BMI
-            </NavLink>
           </Nav>
           <Nav className="ms-auto gap-1">{component}</Nav>
         </Navbar.Collapse>

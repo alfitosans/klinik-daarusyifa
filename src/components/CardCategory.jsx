@@ -32,7 +32,7 @@ function CardCategory() {
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
-          <Link to={`/consult/category/${item.link}`} key={item.id} fluid>
+          <Link to={`/paymentdoctor`} key={item.id} fluid>
             <div>
               <Card className="card" id="card">
                 <div id="gradient-bg"></div>

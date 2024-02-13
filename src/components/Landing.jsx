@@ -7,7 +7,7 @@ import "../styles/Landing.css";
 import Pict1 from "../assets/pict1.svg";
 import Pict2 from "../assets/pict2.svg";
 import { Container, Row } from "react-bootstrap";
-import ArticleLanding from "../pages/ArticleLanding";
+
 import { Link } from "react-router-dom";
 
 // Aos
@@ -176,9 +176,7 @@ const Landing = () => {
 
       <div>
         {/* article */}
-        <section className="articlelanding container">
-          <ArticleLanding />
-        </section>
+        <section className="articlelanding container"></section>
       </div>
     </>
   );

@@ -25,23 +25,10 @@ const Consult = () => {
             <div className="col-md-1">
               <h3 className="text-light-gray">|</h3>
             </div>
+
             <div className="col-md-7">
               <NavLink
-                to="/consult/chatroom"
-                className="fw-bold text-decoration-none"
-              >
-                <h4 className="text-light-gray">Ruang Konsultasi</h4>
-              </NavLink>
-              <p className="lead text-secondary">
-                <small>
-                  {" "}
-                  Pilih dokter yang sesuai dengan kebutuhan kamu yuk!
-                </small>
-              </p>
-            </div>
-            <div className="col-md-7">
-              <NavLink
-                to="/consult/category/bookingstatus"
+                to="paymentdoctor/bookingstatus"
                 className="fw-bold text-decoration-none"
               >
                 <h4 className="text-light-gray">Booking Status</h4>
