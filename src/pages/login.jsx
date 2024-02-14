@@ -3,7 +3,6 @@ import "./../styles/loginregis.css";
 import loginLogo from "./../assets/login.svg";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { PaymentContext } from "../context/paymentContext";
 
 import { useEffect } from "react";
 import AOS from "aos";

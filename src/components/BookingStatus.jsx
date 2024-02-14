@@ -6,6 +6,7 @@ function BookingStatus() {
   return (
     <>
       <Container>
+        <Button>Cek Antrian Anda</Button>
         <Card className="p-5">
           <h2>Booking Status</h2>
           <p className="mb-4">
@@ -15,9 +16,9 @@ function BookingStatus() {
           <h4 className="mb-3">Kategori Poli :</h4>
           <h4 className="mb-3">No Antrian :</h4>
           <h4 className="mb-3">Waktu :</h4>
-          <Link to="/consult/category">
+          <Link to="/">
             <Button variant="primary" className="mt-3">
-              Kembali ke Kategori Dokter
+              Kembali ke Home
             </Button>
           </Link>
         </Card>

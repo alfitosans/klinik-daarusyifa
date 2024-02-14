@@ -25,7 +25,6 @@ import RegisterDoctor from "./pages/RegisterDoctor";
 
 // import payment
 import PaymentPage from "./pages/PaymentPage";
-import PaymentProvider from "./context/paymentContext";
 
 import Consult from "./pages/Consult";
 
@@ -67,10 +66,8 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BookingProvider>
-      <PaymentProvider>
-        {/* Semua Router yang kita buat di atas,  nanti bakalan di load di Router Provider di bawah ini */}
-        <RouterProvider router={router} />
-      </PaymentProvider>
+      {/* Semua Router yang kita buat di atas,  nanti bakalan di load di Router Provider di bawah ini */}
+      <RouterProvider router={router} />
     </BookingProvider>
   </React.StrictMode>
 );
