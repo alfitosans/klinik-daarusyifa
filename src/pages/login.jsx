@@ -12,7 +12,6 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const { payment, setPayment } = useContext(PaymentContext);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -49,12 +48,8 @@ function Login() {
         const loginDataJson = JSON.stringify(loginData);
         localStorage.setItem("idUser", loginDataJson);
 
-        // if payment context have a data, then redirect to booking page
-        if (payment) {
-          navigate("/bookingpage");
-        } else {
-          navigate("/");
-        }
+        navigate("/");
+
         // else redirect to home page
       }
     };

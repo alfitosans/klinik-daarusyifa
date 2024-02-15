@@ -64,10 +64,10 @@ const router = createBrowserRouter(
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <BookingProvider>
-      {/* Semua Router yang kita buat di atas,  nanti bakalan di load di Router Provider di bawah ini */}
-      <RouterProvider router={router} />
-    </BookingProvider>
-  </React.StrictMode>
+  // <React.StrictMode>
+  <BookingProvider>
+    {/* Semua Router yang kita buat di atas,  nanti bakalan di load di Router Provider di bawah ini */}
+    <RouterProvider router={router} />
+  </BookingProvider>
+  // </React.StrictMode>
 );

@@ -3,44 +3,65 @@ import Calendar from "react-calendar";
 // import 'react-calendar/dist/Calendar.css'
 import "./../styles/Calendar.css";
 
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Outlet, useNavigate, useParams } from "react-router";
 import { Input } from "@mui/material";
 import Swal from "sweetalert2";
+import axios from "axios";
+import { v4 as uuidv4 } from "uuid";
 
 const PaymentPage = () => {
-  const [radioVal, setRadioVal] = useState(false);
-  const [Token, setToken] = useState("");
-
   const navigate = useNavigate();
   const param = useParams();
+  const [uuid, setUuid] = useState(null);
+  const [selectedTime, setSelectedTime] = useState("Waktu");
 
-  // ======================================================
-  const [selectedTime, setSelectedTime] = useState("Waktu"); // Inisialisasi state untuk melacak waktu yang dipilih
   const handleDropdownSelect = (eventKey, event) => {
-    // Mengupdate state dengan waktu yang dipilih
     setSelectedTime(eventKey);
   };
 
-  // =========================================================
-
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    navigate("/paymentdoctor/bookingstatus");
-    new Swal({
-      icon: "success",
-      title: "Berhasil!",
-      text: "Token berhasil di validasi!, pembayaran berhasil dilakukan!",
-    });
+
+    try {
+      const userDataString = localStorage.getItem("idUser");
+      const userData = JSON.parse(userDataString);
+
+      const userName = userData.name;
+      const userId = userData.id;
+      const Category = localStorage.getItem("selectedCategory");
+      const selectedCategory = JSON.parse(Category).name;
+
+      const myuuid = uuidv4();
+      console.log(`uuid anda adalah : ${myuuid}`);
+      setUuid(myuuid);
+
+      // Send data to mock API
+      await axios.post(
+        "https://64de412c825d19d9bfb25d14.mockapi.io/bookingPasien",
+        {
+          uuid: myuuid,
+          selectedTime,
+          user_name: userName,
+          kategori_poli: selectedCategory,
+          user_id: userId,
+          // Add other data you want to send to the API
+        }
+      );
+
+      navigate("/paymentdoctor/bookingstatus");
+      Swal.fire("Berhasil Buat Antrean", "", "success");
+    } catch (error) {
+      console.error("Error sending data to API", error);
+      Swal.fire("Terjadi Kesalahan", "Silakan coba lagi", "error");
+    }
   };
 
   return (
     <>
-      {/* <h1>Payment Page</h1> */}
       <Container className="mt-5">
         <Row className="gap-5">
           <Col>
-            {/* <h1 className="text-carevul mb-4">Calendar</h1> */}
             <Calendar />
           </Col>
 

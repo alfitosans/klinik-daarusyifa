@@ -22,6 +22,14 @@ function CardCategory() {
     );
   }, []);
 
+  const handleCategoryClick = (categoryId, category) => {
+    // Store the selected category in local storage
+    localStorage.setItem(
+      "selectedCategory",
+      JSON.stringify({ id: categoryId, name: category })
+    );
+  };
+
   return (
     <>
       {cards.map((item) => (
@@ -32,14 +40,19 @@ function CardCategory() {
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
-          <Link to={`/paymentdoctor`} key={item.id} fluid>
+          <Link
+            to={`/paymentdoctor`}
+            key={item.id}
+            fluid
+            onClick={() => handleCategoryClick(item.id, item.category)}
+          >
             <div>
               <Card className="card" id="card">
                 <div id="gradient-bg"></div>
                 <Card.Img src={item.image} id="card-category-image" />
-                <Card.Title className="card-category-title">
+                {/* <Card.Title className="card-category-title">
                   {item.category}
-                </Card.Title>
+                </Card.Title> */}
               </Card>
             </div>
           </Link>
