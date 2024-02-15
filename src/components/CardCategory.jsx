@@ -43,7 +43,7 @@ function CardCategory() {
           <Link
             to={`/paymentdoctor`}
             key={item.id}
-            fluid
+            fluid="true"
             onClick={() => handleCategoryClick(item.id, item.category)}
           >
             <div>

@@ -32,11 +32,6 @@ function BookingStatus() {
     fetchData();
   }, []);
 
-  const handleBooking = () => {
-    // Add your handling logic here
-    Swal.fire("Feature not implemented");
-  };
-
   return (
     <Container>
       {bookingData.map((booking) => (
@@ -55,7 +50,16 @@ function BookingStatus() {
             <h6 className="mb-3">No Antrian :</h6>
             <h4>{booking.nomer_antrian}</h4>
             <h6 className="mb-3">Waktu :</h6>
-            <h4>{booking.selectedTime}</h4>
+            <h4>{`${booking.selectedTime}`}</h4>
+            <h4>{` ${new Date(booking.valueCalender).toLocaleDateString(
+              "id-ID",
+              {
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              }
+            )}`}</h4>
           </>
         </Card>
       ))}{" "}

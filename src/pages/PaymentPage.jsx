@@ -11,9 +11,12 @@ import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 
 const PaymentPage = () => {
+  const [valueCalender, onChangeCalender] = useState("");
+
+  //=================================================
   const navigate = useNavigate();
   const param = useParams();
-  const [uuid, setUuid] = useState(null);
+  const [uuid, setUuid] = useState("");
   const [selectedTime, setSelectedTime] = useState("Waktu");
 
   const handleDropdownSelect = (eventKey, event) => {
@@ -42,6 +45,7 @@ const PaymentPage = () => {
         {
           uuid: myuuid,
           selectedTime,
+          valueCalender,
           user_name: userName,
           kategori_poli: selectedCategory,
           user_id: userId,
@@ -62,7 +66,7 @@ const PaymentPage = () => {
       <Container className="mt-5">
         <Row className="gap-5">
           <Col>
-            <Calendar />
+            <Calendar onChange={onChangeCalender} value={valueCalender} />
           </Col>
 
           <Col className="">
