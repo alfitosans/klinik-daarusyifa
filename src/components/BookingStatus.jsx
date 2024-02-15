@@ -57,12 +57,11 @@ function BookingStatus() {
             <h6 className="mb-3">Waktu :</h6>
             <h4>{booking.selectedTime}</h4>
           </>
-          <Link to="/"></Link>
         </Card>
-      ))}
-      <Button variant="primary" className="mt-3">
-        Kembali ke Home
-      </Button>
+      ))}{" "}
+      <Link to="/">
+        <Button>Kembali ke Home</Button>{" "}
+      </Link>
     </Container>
   );
 }
