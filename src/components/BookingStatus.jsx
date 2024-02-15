@@ -5,15 +5,15 @@ import Swal from "sweetalert2";
 
 function BookingStatus() {
   const [bookingData, setBookingData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Get user ID from local storage
         const getStorageUser = localStorage.getItem("idUser");
         const userId = JSON.parse(getStorageUser);
 
-        // Fetch data based on the user ID
         const response = await fetch(
           `https://64de412c825d19d9bfb25d14.mockapi.io/bookingPasien?user_id=${userId.id}`
         );
@@ -25,12 +25,33 @@ function BookingStatus() {
         const data = await response.json();
         setBookingData(data);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        setError(error.message);
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchData();
   }, []);
+
+  if (loading) {
+    return (
+      <Container>
+        <p>Mengambil Data..</p>
+      </Container>
+    );
+  }
+
+  if (error) {
+    return (
+      <Container>
+        {" "}
+        <Link to="/consult/category">
+          <Button>Daftar Antrean</Button>
+        </Link>
+      </Container>
+    );
+  }
 
   return (
     <Container>
@@ -62,7 +83,7 @@ function BookingStatus() {
             )}`}</h4>
           </>
         </Card>
-      ))}{" "}
+      ))}
       <Link to="/">
         <Button>Kembali ke Home</Button>{" "}
       </Link>
