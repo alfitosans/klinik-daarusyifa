@@ -57,7 +57,12 @@ const PaymentPage = () => {
       Swal.fire("Berhasil Buat Antrean", "", "success");
     } catch (error) {
       console.error("Error sending data to API", error);
-      Swal.fire("Terjadi Kesalahan", "Silakan coba lagi", "error");
+      Swal.fire({
+        title: "Anda Belum Login",
+        text: "Silahkan Log In terlebih dahulu 👏",
+        icon: "info",
+        footer: '<a href="/login">Login disini</a>',
+      });
     }
   };
 

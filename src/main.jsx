@@ -31,6 +31,9 @@ import Consult from "./pages/Consult";
 import BookingProvider from "./context/bookingContext";
 import BookingStatus from "./components/BookingStatus.jsx";
 
+// import Admin roles
+import AdminPage from "./pages/AdminPage.jsx";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -53,6 +56,7 @@ const router = createBrowserRouter(
             element={<BookingStatus />}
           />
         </Route>
+        <Route path="/admin" element={<AdminPage />} />
       </Route>
 
       <Route path="/login" element={<Login />} />
