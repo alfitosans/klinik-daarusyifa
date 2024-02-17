@@ -1,57 +1,47 @@
-import { Button, Card, Container } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import "./../styles/category-doctor.css";
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useState } from "react";
 
-function adminPage() {
-  const [dataBooking, setDataBooking] = useState([]);
+import DataBookingAdmin from "../components/DataBookingAdmin";
+import KategoriDokterAdmin from "../components/KategoriDokterAdmin";
+import DataPasienAdmin from "../components/DataPasienAdmin";
 
-  useEffect(() => {
-    axios("https://64de412c825d19d9bfb25d14.mockapi.io/bookingPasien").then(
-      (result) => setDataBooking(result.data)
-    );
-  }, []);
+function AdminPage() {
+  const [selectedComponent, setSelectedComponent] = useState("DataBooking");
+
+  const handleButtonClick = (component) => {
+    setSelectedComponent(component);
+  };
 
   return (
-    <>
-      <Container>
+    <Container>
+      <div>
+        <h2>Admin Page</h2>
+        <p>
+          Halaman ini adalah halaman admin. Disini admin bisa melakukan
+          penambahan, penghapusan, dan perubahan data.
+        </p>
+
+        <Button onClick={() => handleButtonClick("DataBooking")}>
+          Data Booking
+        </Button>
+
+        <Button onClick={() => handleButtonClick("KategoriDokter")}>
+          Data Kategori
+        </Button>
+
+        <Button onClick={() => handleButtonClick("DataPasien")}>
+          Data Pasien
+        </Button>
+
         <div>
-          <h2>Admin Page</h2>
-          <p>
-            Halaman ini adalah halaman admin. Disini admin bisa melakukan
-            penambahan, penghapusan, dan perubahan data.
-          </p>
-
-          <Button className="">Data Booking</Button>
-
-          <Button>Data Pasien</Button>
-
-          {dataBooking.map((item) => (
-            <Card className="p-5" key={item.id}>
-              <h6 className="mb-3">Id Booking : </h6>
-              <h4>{item.uuid}</h4>
-              <h6 className="mb-3">Nama Pasien : </h6>
-              <h4>{item.user_name}</h4>
-              <h6 className="mb-3">Kategori Poli : </h6>
-              <h4>{item.kategori_poli}</h4>
-              <h6 className="mb-3">No Antrian :</h6>
-              <h4>{item.nomer_antrian}</h4>
-              <h6 className="mb-3">Waktu :</h6>
-              <h4>{`${item.selectedTime}`}</h4>
-              <h4>{` ${new Date(item.valueCalender).toLocaleDateString(
-                "id-ID",
-                {
-                  weekday: "long",
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                }
-              )}`}</h4>
-            </Card>
-          ))}
+          {selectedComponent === "DataBooking" && <DataBookingAdmin />}
+          {selectedComponent === "KategoriDokter" && <KategoriDokterAdmin />}
+          {selectedComponent === "DataPasien" && <DataPasienAdmin />}
         </div>
-      </Container>
-    </>
+      </div>
+    </Container>
   );
 }
-export default adminPage;
+
+export default AdminPage;
