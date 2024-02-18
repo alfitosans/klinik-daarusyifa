@@ -19,7 +19,7 @@ function AdminPage() {
         <h2>Admin Page</h2>
         <p>
           Halaman ini adalah halaman admin. Disini admin bisa melakukan
-          penambahan, penghapusan, dan perubahan data.
+          penghapusan, dan perubahan data.
         </p>
 
         <Button onClick={() => handleButtonClick("DataBooking")}>

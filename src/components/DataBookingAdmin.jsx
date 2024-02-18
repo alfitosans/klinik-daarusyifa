@@ -23,12 +23,11 @@ function DataBookingAdmin() {
 
   const handleDeleteAll = async () => {
     try {
-      await axios.delete(
-        "https://64de412c825d19d9bfb25d14.mockapi.io/bookingPasien"
-      );
-      Swal.fire("Berhasil Menghapus Semua Data", "", "success");
-      // After successful deletion, fetch data again
-      fetchData();
+      await axios
+        .delete("https://64de412c825d19d9bfb25d14.mockapi.io/bookingPasien")
+        .then((response) => {
+          console.log(response);
+        });
     } catch (error) {
       console.error("Error deleting all data:", error);
       Swal.fire("Gagal Menghapus Data", "", "error");
@@ -40,7 +39,7 @@ function DataBookingAdmin() {
       await axios.delete(
         `https://64de412c825d19d9bfb25d14.mockapi.io/bookingPasien/${key}`
       );
-      // After successful deletion, fetch data again
+      Swal.fire(`pasien ${key} sudah selesai konsultasi`, "", "success");
       fetchData();
     } catch (error) {
       console.error(`Error deleting data with key ${key}:`, error);
@@ -52,7 +51,7 @@ function DataBookingAdmin() {
       <div>
         <Button onClick={handleDeleteAll}>Delete All Data</Button>
         {dataBooking.map((item) => (
-          <Card className="p-5" key={item.id}>
+          <Card className="p-5" key={item.nomer_antrian}>
             <h6 className="mb-3">Id Booking : </h6>
             <h4>{item.uuid}</h4>
             <h6 className="mb-3">Nama Pasien : </h6>
@@ -69,7 +68,7 @@ function DataBookingAdmin() {
               month: "long",
               day: "numeric",
             })}`}</h4>
-            <Button onClick={() => handleDeleteByKey(item.id)}>
+            <Button onClick={() => handleDeleteByKey(item.nomer_antrian)}>
               Delete Data
             </Button>
           </Card>
