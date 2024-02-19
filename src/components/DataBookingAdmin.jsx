@@ -35,18 +35,23 @@ function DataBookingAdmin() {
       // Optionally, you can perform additional actions after all items are deleted
       console.log("All items deleted successfully");
       setDataBooking([]); // Optional: Clear the state after deleting all items
+      Swal.fire("Berhasil Menghapus Semua Data", "", "success");
     } catch (error) {
       console.error("Error deleting all data:", error);
       Swal.fire("Gagal Menghapus Data", "", "error");
     }
   };
 
-  const handleDeleteByKey = async (key) => {
+  const handleDeleteByKey = async (key, item) => {
     try {
       await axios.delete(
         `https://64de412c825d19d9bfb25d14.mockapi.io/bookingPasien/${key}`
       );
-      Swal.fire(`pasien ${key} sudah selesai konsultasi`, "", "success");
+      Swal.fire(
+        `pasien ke ${key} yang bernama ${item.user_name} sudah selesai konsultasi`,
+        "",
+        "success"
+      );
       fetchData();
     } catch (error) {
       console.error(`Error deleting data with key ${key}:`, error);
