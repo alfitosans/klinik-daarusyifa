@@ -42,13 +42,13 @@ function DataBookingAdmin() {
     }
   };
 
-  const handleDeleteByKey = async (key, item) => {
+  const handleDeleteByKey = async (key, userName) => {
     try {
       await axios.delete(
         `https://64de412c825d19d9bfb25d14.mockapi.io/bookingPasien/${key}`
       );
       Swal.fire(
-        `pasien ke ${key} yang bernama ${item.user_name} sudah selesai konsultasi`,
+        `Pasien ke ${key} yang bernama ${userName} sudah selesai konsultasi`,
         "",
         "success"
       );
@@ -80,7 +80,11 @@ function DataBookingAdmin() {
               month: "long",
               day: "numeric",
             })}`}</h4>
-            <Button onClick={() => handleDeleteByKey(item.nomer_antrian)}>
+            <Button
+              onClick={() =>
+                handleDeleteByKey(item.nomer_antrian, item.user_name)
+              }
+            >
               Delete Data
             </Button>
           </Card>
