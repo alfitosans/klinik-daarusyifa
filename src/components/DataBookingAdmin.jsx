@@ -23,11 +23,18 @@ function DataBookingAdmin() {
 
   const handleDeleteAll = async () => {
     try {
-      await axios
-        .delete("https://64de412c825d19d9bfb25d14.mockapi.io/bookingPasien")
-        .then((response) => {
-          console.log(response);
-        });
+      for (const item of dataBooking) {
+        await axios
+          .delete(
+            `https://64de412c825d19d9bfb25d14.mockapi.io/bookingPasien/${item.nomer_antrian}`
+          )
+          .then((response) => {
+            console.log(`Deleted item with id ${item.nomer_antrian}`);
+          });
+      }
+      // Optionally, you can perform additional actions after all items are deleted
+      console.log("All items deleted successfully");
+      setDataBooking([]); // Optional: Clear the state after deleting all items
     } catch (error) {
       console.error("Error deleting all data:", error);
       Swal.fire("Gagal Menghapus Data", "", "error");
