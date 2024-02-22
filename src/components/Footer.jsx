@@ -37,21 +37,7 @@ const footer = () => {
             </div>
 
             <div className="col-lg-2 my-3 mb-md-2 ">
-              <div className="list-footer flex-column d-flex justify-content-around">
-                <div className="d-flex flex-column  gap-2">
-                  <h5 className="text-carevul">Site Map</h5>
-                  <Link to="/" className="fw-normal text-gray">
-                    Home
-                  </Link>
-                  <Link to="/articlehome" className="fw-normal text-gray">
-                    Artikel
-                  </Link>
-
-                  <Link to="/bmicalculator" className="fw-normal text-gray">
-                    Kalkulator BMI
-                  </Link>
-                </div>
-              </div>
+              <div className="list-footer flex-column d-flex justify-content-around"></div>
             </div>
             <div className="col-lg-2 my-3 mb-md-2 ">
               <div className="list-footer ">

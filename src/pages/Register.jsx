@@ -15,6 +15,11 @@ function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
 
+    // Validasi teks input tidak boleh kosong
+    if (!name || !email || !password) {
+      return Swal.fire("Error", "Mohon lengkapi semua kolom", "error");
+    }
+
     let res = await axios.get(
       "https://64e224b4ab0037358818bf67.mockapi.io/users"
     );
@@ -23,15 +28,15 @@ function Register() {
     const ambilData = async () => {
       const result = [];
       for (let i = 0; i < data.length; i++) {
-        if (data[i].email == email) {
-          await result.push(data[i]);
+        if (data[i].email === email) {
+          result.push(data[i]);
         }
       }
 
       console.log(result);
 
-      if (result == 0) {
-        await axios
+      if (result.length === 0) {
+        axios
           .post("https://64e224b4ab0037358818bf67.mockapi.io/users", {
             name: name,
             email: email,
@@ -40,23 +45,21 @@ function Register() {
               "https://img.icons8.com/?size=512&id=tZuAOUGm9AuS&format=png",
           })
           .then((result) => {
-            new Swal(
+            Swal.fire(
               "Success!",
               "your account has been successfully created.",
-              "success",
-              {
-                timer: 3000,
-              },
-              navigate("/login")
-            );
+              "success"
+            ).then((result) => {
+              if (result.isConfirmed) {
+                navigate("/login");
+              }
+            });
           })
           .catch((error) => {
             console.log(error);
           });
       } else {
-        new Swal("Important Message!", "Email already registered.", "warning", {
-          timer: 3000,
-        });
+        Swal.fire("Important Message!", "Email already registered.", "warning");
       }
     };
     ambilData();

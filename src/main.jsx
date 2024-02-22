@@ -20,8 +20,6 @@ import Layout from "./components/Layout.jsx";
 // impoort outlet
 import Landing from "./components/Landing";
 import CategoryDoctor from "./components/CategoryDoctor";
-import LoginDoctor from "./pages/LoginDoctor";
-import RegisterDoctor from "./pages/RegisterDoctor";
 
 // import payment
 import PaymentPage from "./pages/PaymentPage";
@@ -61,8 +59,6 @@ const router = createBrowserRouter(
 
       <Route path="/login" element={<Login />} />
       <Route path="/regis" element={<Register />} />
-      <Route path="/logindoctor" element={<LoginDoctor />} />
-      <Route path="/regisdoctor" element={<RegisterDoctor />} />
     </>
   )
 );

@@ -1,17 +1,15 @@
-import React, { useContext, useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./../styles/loginregis.css";
 import loginLogo from "./../assets/login.svg";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-
-import { useEffect } from "react";
+import Swal from "sweetalert2";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -22,6 +20,11 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
+    // Validasi email dan password tidak boleh kosong
+    if (!email || !password) {
+      return Swal.fire("Error", "Email dan password harus diisi", "error");
+    }
+
     let res = await axios.get(
       "https://64e224b4ab0037358818bf67.mockapi.io/users"
     );
@@ -30,15 +33,14 @@ function Login() {
     const ambilData = () => {
       const result = [];
       for (let i = 0; i < data.length; i++) {
-        if (data[i].email == email && data[i].password == password) {
+        if (data[i].email === email && data[i].password === password) {
           result.push(data[i]);
         }
       }
 
-      if (result < 1) {
-        alert("Gagal Login");
+      if (result.length < 1) {
+        Swal.fire("Error", "Email atau password salah", "error");
       } else {
-        // alert("Berhasil Login");
         const loginData = {
           email: result[0].email,
           name: result[0].name,
@@ -47,10 +49,7 @@ function Login() {
         };
         const loginDataJson = JSON.stringify(loginData);
         localStorage.setItem("idUser", loginDataJson);
-
         navigate("/");
-
-        // else redirect to home page
       }
     };
     ambilData();
@@ -136,21 +135,7 @@ function Login() {
                     </span>
                   </Link>
                 </p>
-                <div>
-                  <p
-                    className="fsize-15 d-block text-center"
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                  >
-                    Kamu Dokter?
-                    <Link
-                      to={"/logindoctor"}
-                      style={{ textDecoration: "none" }}
-                    >
-                      <span className="regis">Login disini yuk!</span>
-                    </Link>
-                  </p>
-                </div>
+                <div></div>
               </div>
             </div>
           </div>
