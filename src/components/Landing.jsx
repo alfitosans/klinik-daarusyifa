@@ -158,12 +158,12 @@ const Landing = () => {
               <div className="desc">
                 <h2>Visi Klinik Pratama Daarussyifa </h2>
                 <h5>
-                  Visi : “Menjadi Klinik Pratama dengan Pelayanan Paripurna di
-                  Kecamatan Cipayung Jakarta Timur 2023”
+                  Menjadi Klinik Pratama dengan Pelayanan Paripurna di Kecamatan
+                  Cipayung Jakarta Timur 2023
                 </h5>
                 <p>
                   Untuk mencapai visi tersebut, Klinik Pratama Daarussyifa
-                  menjalankan beberapa MISI KESEHATAN berupa: Meningkatkan
+                  menjalankan beberapa MISI KESEHATAN berupa Meningkatkan
                   kompetensi pegawai di berbagai bidang Melakukan pelayanan
                   dengan profesional Melengkapi Sarana dan Prasarana Klinik
                   Pratama Daarussyifa
@@ -173,11 +173,6 @@ const Landing = () => {
           </div>
         </section>
       </section>
-
-      <div>
-        {/* article */}
-        <section className="articlelanding container"></section>
-      </div>
     </>
   );
 };

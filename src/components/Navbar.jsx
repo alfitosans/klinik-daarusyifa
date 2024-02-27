@@ -33,6 +33,7 @@ function BasicExample() {
                 />
 
                 <h5 className="ms-auto text-center">{isLoggedIn.name}</h5>
+                <p>{isLoggedIn.email}</p>
 
                 <Button
                   onClick={handleLogout}
@@ -83,7 +84,7 @@ function BasicExample() {
             <NavLink to={"/"} className="nav-link">
               Home
             </NavLink>
-            <NavLink to={"/consult/category"} className="nav-link ">
+            <NavLink to={"/consult/category"} className="nav-link">
               Konsultasi
             </NavLink>
           </Nav>

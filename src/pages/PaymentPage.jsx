@@ -49,7 +49,6 @@ const PaymentPage = () => {
           user_name: userName,
           kategori_poli: selectedCategory,
           user_id: userId,
-          // Add other data you want to send to the API
         }
       );
 
