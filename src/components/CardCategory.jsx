@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Card } from "react-bootstrap";
+import { Accordion, Card } from "react-bootstrap";
 import { Col, Container, Row, Button } from "react-bootstrap";
 import "./../styles/category-doctor.css";
 import { Link } from "react-router-dom";
@@ -62,6 +62,32 @@ function CardCategory() {
           </Link>
         </Col>
       ))}
+      <div>
+        <h4>Jadwal Dokter</h4>
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>Senin</Accordion.Header>
+            <Accordion.Body>
+              <p>Dr. A</p>
+              <p>Dr. B</p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>Selasa</Accordion.Header>
+            <Accordion.Body>
+              <p>Dr. A</p>
+              <p>Dr. B</p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>Rabu</Accordion.Header>
+            <Accordion.Body>
+              <p>Dr. A</p>
+              <p>Dr. B</p>
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      </div>
     </>
   );
 }
