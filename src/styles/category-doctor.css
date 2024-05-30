@@ -30,32 +30,19 @@ p {
   line-height: 15px;
 }
 
-#card-row {
-  padding: -10px;
-  margin: 10px;
-}
-
 #col-card {
-  display: flex;
-  flex-wrap: wrap;
-  padding: -50px;
+  margin-bottom: 20px;
 }
 
 #card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #card-category-image {
-  background-position: left;
   width: 100%;
-  transition: transform 0.2s;
-  height: auto;
-}
-
-.card-category-title {
-  line-height: 130%;
-  color: #ffffff;
-  font-size: 20px;
-  position: absolute;
-  bottom: 5px;
-  left: 15px;
+  height: 100%; /* Adjust height as needed */
+  object-fit: cover;
 }

@@ -49,7 +49,11 @@ function CardCategory() {
             <div>
               <Card className="card" id="card">
                 <div id="gradient-bg"></div>
-                <Card.Img src={item.image} id="card-category-image" />
+                <Card.Img
+                  src={item.image}
+                  id="card-category-image"
+                  className=""
+                />
                 {/* <Card.Title className="card-category-title">
                   {item.category}
                 </Card.Title> */}
