@@ -54,9 +54,6 @@ function CardCategory() {
                   id="card-category-image"
                   className=""
                 />
-                {/* <Card.Title className="card-category-title">
-                  {item.category}
-                </Card.Title> */}
               </Card>
             </div>
           </Link>
